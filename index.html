@@ -117,6 +117,23 @@ h2{font-size:28px;margin:0 0 28px;font-weight:700}
 .verify input{flex:1;min-width:220px;padding:13px 14px;border:1px solid var(--line);border-radius:4px;background:var(--surface);color:var(--ink);font:inherit}
 .verify button{padding:13px 22px;border:0;border-radius:4px;background:var(--ink);color:var(--bg);font:inherit;font-weight:500;cursor:pointer}
 #vmsg{margin-top:10px;color:var(--muted);font-size:15px;min-height:1.5em}
+.vision{background:var(--rack);color:#E4EAEE;border-radius:6px;padding:40px 44px;margin:0 0 40px;box-shadow:inset 0 0 0 2px var(--rackline)}
+.vision small{display:block;color:#8FA0AC;font-size:13px;letter-spacing:.08em;margin-bottom:10px}
+.vision p.v{font-size:clamp(22px,3vw,30px);font-weight:700;line-height:1.4;margin:0 0 14px}
+.vision p.m{margin:0;color:#B7C4CD;font-size:16px;max-width:44em}
+@media (max-width:760px){.vision{padding:28px 24px}}
+.goals{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
+.goals div{background:var(--surface);border:1px solid var(--line);padding:22px 24px}
+.goals h3{margin:0 0 6px;font-size:18px}
+.goals h3 i{font-style:normal;color:var(--cold);margin-right:8px}
+.goals p{margin:0;color:var(--muted);font-size:15px}
+@media (max-width:760px){.goals{grid-template-columns:1fr}}
+.road{list-style:none;padding:0;margin:40px 0 0;display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.road li{border-top:3px solid var(--hot);padding-top:14px}
+.road b{display:block;font-size:13px;color:var(--hot);letter-spacing:.04em}
+.road strong{display:block;font-size:18px;margin:2px 0 6px}
+.road p{margin:0;color:var(--muted);font-size:15px}
+@media (max-width:760px){.road{grid-template-columns:1fr}}
 footer{border-top:1px solid var(--line);padding:36px 0 48px;color:var(--muted);font-size:13px;line-height:1.9}
 footer b{color:var(--ink)}
 </style>
@@ -130,7 +147,7 @@ footer b{color:var(--ink)}
         <button type="button" data-lang="ko" aria-pressed="true">한글</button><button type="button" data-lang="en" aria-pressed="false">EN</button>
       </div>
     </div>
-    <nav><a href="#about" data-i="navAbout">자격 소개</a><a href="#exam" data-i="navExam">시험 안내</a><a href="#subjects" data-i="navSub">출제 과목</a><a href="#apply" data-i="navApply">응시 방법</a></nav>
+    <nav><a href="#about" data-i="navAbout">자격 소개</a><a href="#vision" data-i="navVision">비전</a><a href="#exam" data-i="navExam">시험 안내</a><a href="#subjects" data-i="navSub">출제 과목</a><a href="#apply" data-i="navApply">응시 방법</a></nav>
   </header>
 
   <div class="hero">
@@ -163,6 +180,26 @@ footer b{color:var(--ink)}
       <h3 data-i="whoH">이런 분께 맞습니다</h3>
       <p data-i="whoP">데이터센터 운영·시설·보안 업무를 시작하는 신입, IT 인프라나 전기·설비 분야에서 데이터센터로 옮기려는 분, 사내 전산실을 맡은 담당자, 협력사 엔지니어와 교육기관 수강생.</p>
     </div>
+  </section>
+
+  <section id="vision">
+    <h2 data-i="visH">비전과 목표</h2>
+    <div class="vision">
+      <small data-i="visTag">VISION</small>
+      <p class="v" data-i="visV">데이터센터 운영 역량의 기준을 만듭니다</p>
+      <p class="m" data-i="visM">데이터센터역량인증원은 데이터센터를 안전하게 운영할 수 있는 사람을 찾고, 키우고, 인정하는 기준이 되고자 합니다. 기업은 믿고 채용하고, 운영자는 자신의 역량을 증명할 수 있도록 공정하고 실무 중심인 자격을 운영합니다.</p>
+    </div>
+    <div class="goals">
+      <div><h3><i>01</i><span data-i="g1h">공식 수험서 출판</span></h3><p data-i="g1p">데이터센터운영관리사 2급 공식 수험서를 직접 출판합니다. 현장 운영 경험을 바탕으로 정확한 데이터와 주석을 담아, 시험 준비와 실무 교재로 함께 쓸 수 있게 만듭니다.</p></div>
+      <div><h3><i>02</i><span data-i="g2h">운영 인재 양성과 공통 기준</span></h3><p data-i="g2p">교육과정과 온라인 강의로 운영 인재를 키우고, 기업과 기관이 채용·직무 교육·협력사 관리에 함께 쓰는 운영 역량 기준을 만듭니다.</p></div>
+      <div><h3><i>03</i><span data-i="g3h">누구나 응시할 수 있는 시험</span></h3><p data-i="g3p">웹 CBT, 한국어·영어 응시, 즉시 결과 발표로 시간과 장소에 구애받지 않고 응시할 수 있게 합니다.</p></div>
+      <div><h3><i>04</i><span data-i="g4h">동남아로 넓히는 자격</span></h3><p data-i="g4p">데이터센터가 빠르게 늘고 있는 동남아 국가로 자격을 넓힙니다. 수험서를 영어와 현지 언어로 번역해 현지에서 출판하고, 같은 기준의 CBT 시험을 현지 언어로 제공합니다.</p></div>
+    </div>
+    <ol class="road">
+      <li><b data-i="r1b">STEP 1</b><strong data-i="r1h">자격 출범</strong><p data-i="r1p">데이터센터운영관리사 2급 시행, 공식 수험서 발간, 웹 CBT 개통</p></li>
+      <li><b data-i="r2b">STEP 2</b><strong data-i="r2h">교육과 저변 확대</strong><p data-i="r2p">온라인 강의와 교육과정 운영, 기업·교육기관 단체시험과 협력 확대</p></li>
+      <li><b data-i="r3b">STEP 3</b><strong data-i="r3h">해외 진출</strong><p data-i="r3p">영어·현지어 수험서 현지 출판, 동남아 국가 대상 현지 언어 CBT 시행</p></li>
+    </ol>
   </section>
 
   <section id="exam">
@@ -228,6 +265,16 @@ w1h:"Operators are in short supply",w1p:"Data centers in Korea are growing fast,
 w2h:"No operations-focused qualification existed",w2p:"Existing courses and foreign certifications focus on design and facilities, or run only in English. This one covers what operators do every day, such as walkthroughs, access control, permits to work and incident response, in Korean and English.",
 w3h:"Incidents are prevented in operations",w3p:"Korea has seen major service outages caused by data center fires. Having people on site who know battery care, fire suppression and work control is how the same incidents are reduced.",
 whoH:"Who it is for",whoP:"New staff in data center operations, facilities or security; people moving in from IT infrastructure or electrical and mechanical fields; in-house server room managers; partner engineers and training students.",
+navVision:"Vision",visH:"Vision and goals",visTag:"VISION",
+visV:"Setting the standard for data center operations competency",
+visM:"The Data Center Competency Institute aims to be the standard for finding, developing and recognizing people who can run data centers safely. We run a fair, practice-based qualification so employers can hire with confidence and operators can prove what they can do.",
+g1h:"Publishing the official study guide",g1p:"We publish the official Level 2 study guide ourselves. Built on real operations experience, with accurate data and notes, it serves both as exam prep and as a practical handbook.",
+g2h:"Developing operators, setting a standard",g2p:"We develop operators through courses and online lectures, and build a competency standard that companies and institutions can use for hiring, job training and managing partners.",
+g3h:"An exam anyone can take",g3p:"Web CBT, Korean or English, and instant results let candidates take the exam wherever and whenever suits them.",
+g4h:"Expanding into Southeast Asia",g4p:"We will bring the qualification to fast-growing data center markets in Southeast Asia, translating the study guide into English and local languages for local publication and offering the same CBT exam in local languages.",
+r1b:"STEP 1",r1h:"Launch",r1p:"Launch Operations Manager Level 2, publish the official study guide, open the web CBT",
+r2b:"STEP 2",r2h:"Education and reach",r2p:"Run online lectures and courses, expand group exams and partnerships with companies and schools",
+r3b:"STEP 3",r3h:"Going global",r3p:"Publish English and local-language study guides locally and run local-language CBT exams across Southeast Asia",
 examH:"Exam",f1b:"60 questions",f1s:"Multiple choice, 4 options",f2b:"60 minutes",f2s:"Web CBT",f3b:"Korean · English",f3s:"Choose your language",f4b:"Instant result",f4s:"PDF certificate by email",
 passTxt:"To pass you need <b>70 or more out of 100</b>, and every subject must score at least 40.",
 regNote:"The private qualification registration number will be posted here once registration is complete.",
