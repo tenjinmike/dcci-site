@@ -92,7 +92,6 @@ h2{font-size:28px;margin:0 0 28px;font-weight:700}
 .types{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
 .types h3{margin:0 0 6px;font-size:18px}
 .types p{margin:0;color:var(--muted);font-size:15px}
-.types.two{grid-template-columns:repeat(2,1fr)}
 @media (max-width:760px){.types{grid-template-columns:1fr}}
 
 .verify{display:flex;gap:10px;flex-wrap:wrap;margin-top:8px}
@@ -112,7 +111,7 @@ footer b{color:var(--ink)}
         <button type="button" data-lang="ko" aria-pressed="true">한글</button><button type="button" data-lang="en" aria-pressed="false">EN</button>
       </div>
     </div>
-    <nav><a href="#about" data-i="navAbout">자격 소개</a><a href="#exam" data-i="navExam">시험 안내</a><a href="#subjects" data-i="navSub">출제 과목</a><a href="#apply" data-i="navApply">응시 방법</a><a href="#verify" data-i="navVerify">합격증 확인</a></nav>
+    <nav><a href="#about" data-i="navAbout">자격 소개</a><a href="#exam" data-i="navExam">시험 안내</a><a href="#subjects" data-i="navSub">출제 과목</a><a href="#apply" data-i="navApply">응시 방법</a></nav>
   </header>
 
   <div class="hero">
@@ -180,21 +179,12 @@ footer b{color:var(--ink)}
       <li><b data-i="st3b">웹 CBT 응시</b><p data-i="st3p">정해진 시간에 접속해 60분 동안 응시합니다.</p></li>
       <li><b data-i="st4b">결과 확인</b><p data-i="st4p">제출 즉시 합격 여부가 나오고, 합격증이 이메일로 발송됩니다.</p></li>
     </ol>
-    <div class="types two" style="margin-top:44px">
-      <div><h3 data-i="t2h">수시 CBT</h3><p data-i="t2p">연중 수시로 회차를 열어 웹으로 응시합니다.</p></div>
+    <div class="types" style="margin-top:44px">
+      <div><h3 data-i="t1h">정기시험</h3><p data-i="t1p">연 1회 공고하는 정기 회차입니다.</p></div>
+      <div><h3 data-i="t2h">수시 CBT</h3><p data-i="t2p">정기시험 외에 수시로 여는 웹 시험입니다.</p></div>
       <div><h3 data-i="t3h">단체시험</h3><p data-i="t3p">10명 이상 기관·기업은 별도 회차를 신청할 수 있습니다.</p></div>
     </div>
     <p style="margin-top:32px"><a class="cta" href="mailto:admin@dcci.co.kr" data-i="mailBtn">admin@dcci.co.kr로 문의하기</a></p>
-  </section>
-
-  <section id="verify">
-    <h2 data-i="verH">합격증 진위 확인</h2>
-    <p style="color:var(--muted);margin:0 0 12px" data-i="verP">합격증에 적힌 증서번호를 입력하세요. 예: DCCI-2026-000001</p>
-    <div class="verify">
-      <input id="cert" placeholder="DCCI-2026-000001" aria-label="Certificate number">
-      <button type="button" id="vbtn" data-i="verBtn">확인하기</button>
-    </div>
-    <div id="vmsg" role="status"></div>
   </section>
 
   <footer data-i="foot">
@@ -225,7 +215,7 @@ regNote:"The private qualification registration number will be posted here once 
 subH:"Exam subjects",
 d1:"Tier, TIA-942, ISO/IEC 22237, EN 50600, availability, PUE, ITSM",d2:"Roles of UPS, generators, ATS and PDUs, basic power calculations, electrical work safety",d3:"CRAC/CRAH units, chillers, hot and cold aisles, liquid cooling, ASHRAE ranges",d4:"Servers, storage and networks, structured cabling, rack management",d5:"Security zones, CCTV, access control, tailgating prevention, logs and key control",d6:"IT asset receiving, shipping and disposal, walkthroughs, preventive maintenance, permits and change management",d7:"Gas suppression, LOTO, related laws, major incident cases, BCP and DRP",
 applyH:"How to apply",st1b:"Contact us",st1p:"Email us your preferred date and number of candidates.",st2b:"Session assigned",st2p:"You receive a session code and candidate number by email.",st3b:"Take the web CBT",st3p:"Log in at the scheduled time and take the 60-minute exam.",st4b:"Get your result",st4p:"You see your result on submission and the certificate is emailed to you.",
-t2h:"On-demand CBT",t2p:"Web exam sessions opened throughout the year.",t3h:"Group exam",t3p:"Organizations with 10 or more candidates can request their own session.",
+t1h:"Regular exam",t1p:"Held once a year on an announced date.",t2h:"On-demand CBT",t2p:"Web exam sessions opened throughout the year.",t3h:"Group exam",t3p:"Organizations with 10 or more candidates can request their own session.",
 mailBtn:"Email admin@dcci.co.kr",
 verH:"Verify a certificate",verP:"Enter the certificate number shown on the certificate. Example: DCCI-2026-000001",verBtn:"Verify",
 foot:"<b>Data Center Competency Institute</b> is a data center qualification brand operated by BLUE IT.<br>BLUE IT · CEO Sungmin Lim · Business registration no. 625-15-02359<br>12 Maeyeong-ro 310beon-gil, Yeongtong-gu, Suwon, Gyeonggi-do, Korea · admin@dcci.co.kr<br>This is a private qualification, not a national qualification of Korea."
@@ -239,16 +229,11 @@ function setLang(l){cur=l;var d=l==='en'?EN:KO;
   document.documentElement.lang=l;
   document.title=l==='en'?'Data Center Competency Institute — DC Operations Manager Level 2':'데이터센터역량인증원 — 데이터센터운영관리사 2급';
   document.querySelectorAll('.lang button').forEach(function(b){b.setAttribute('aria-pressed',b.dataset.lang===l?'true':'false');});
-  document.getElementById('vmsg').textContent='';
   try{localStorage.setItem('dcci-lang',l);}catch(e){}
 }
 document.querySelectorAll('.lang button').forEach(function(b){b.addEventListener('click',function(){setLang(b.dataset.lang);});});
 var saved=null;try{saved=localStorage.getItem('dcci-lang');}catch(e){}
 if(saved==='en'||(!saved&&/^en/i.test(navigator.language||'')&&!/^ko/i.test(navigator.language||'')))setLang('en');
-document.getElementById('vbtn').addEventListener('click',function(){
-  var v=document.getElementById('cert').value.trim().toUpperCase();var m=document.getElementById('vmsg');
-  m.textContent=/^DCCI-\d{4}-\d{6}$/.test(v)?MSG[cur].wait:MSG[cur].bad;
-});
 </script>
 </body>
 </html>
