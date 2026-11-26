@@ -14,6 +14,8 @@
 <meta property="og:description" content="데이터센터 운영 인재를 키우는 민간자격. 데이터센터 개요·전력·냉각·IT 인프라·소방·보안·안전·운영 실무 6과목, 웹 CBT 방식 예정(민간자격 등록 준비 중).">
 <meta property="og:url" content="https://dcci.co.kr/">
 <meta property="og:locale" content="ko_KR">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="og:locale:alternate" content="ja_JP">
 <script type="application/ld+json">
 {"@context":"https://schema.org","@graph":[
 {"@type":"Organization","@id":"https://dcci.co.kr/#org","name":"데이터센터역량인증원","alternateName":["Data Center Competency Institute","DCCI"],"url":"https://dcci.co.kr/","email":"admin@dcci.co.kr","parentOrganization":{"@type":"Organization","name":"블루아이티 (BLUE IT)"}},
@@ -54,6 +56,13 @@ a:focus-visible,button:focus-visible{outline:3px solid var(--cold);outline-offse
 .wrap{max-width:1080px;margin:0 auto;padding:0 24px}
 header.top{display:flex;justify-content:space-between;align-items:center;padding:22px 0;border-bottom:1px solid var(--line);gap:16px}
 .left{display:flex;align-items:center;gap:18px}
+:lang(ja) body,html:lang(ja) body{word-break:normal;line-break:strict;overflow-wrap:anywhere}
+html:lang(ja) nav a{margin-left:16px;font-size:14px}
+html:lang(ja) nav a.nav-buy{padding:5px 10px}
+.lang button{white-space:nowrap}
+.lang{flex-shrink:0}
+.brand{min-width:0}
+@media (max-width:480px){.lang button{padding:5px 7px;font-size:12px}.left{gap:10px}}
 .brand{font-weight:700;font-size:18px;color:var(--ink);text-decoration:none;line-height:1.35}
 .brand small{display:block;font-weight:400;font-size:12px;color:var(--muted);letter-spacing:.02em}
 .lang{display:inline-flex;border:1px solid var(--line);border-radius:4px;overflow:hidden}
@@ -175,7 +184,7 @@ footer b{color:var(--ink)}
     <div class="left">
       <a class="brand" href="#"><span data-i="brand">데이터센터역량인증원<sup class="tm">™</sup></span><small data-i="brandSub">Data Center Competency Institute</small></a>
       <div class="lang" role="group" aria-label="Language">
-        <button type="button" data-lang="ko" aria-pressed="true">한글</button><button type="button" data-lang="en" aria-pressed="false">EN</button>
+        <button type="button" data-lang="en" aria-pressed="false">EN</button><button type="button" data-lang="ja" aria-pressed="false" lang="ja">日本語</button><button type="button" data-lang="ko" aria-pressed="true" lang="ko">한글</button>
       </div>
     </div>
     <nav><a href="#about" data-i="navAbout">자격 소개</a><a href="#vision" data-i="navVision">비전</a><a href="#exam" data-i="navExam">시험 안내</a><a href="#subjects" data-i="navSub">출제 과목</a><a href="#apply" data-i="navApply">응시 방법</a><a href="/cbt/" data-i="navCbt">CBT 체험</a><a class="nav-buy" href="https://www.amazon.co.jp/dp/B0HMPXVLQD" target="_blank" rel="noopener" data-i="navBuy">수험서 구매</a></nav>
@@ -334,20 +343,59 @@ notice:"<b>Notice</b> Data Center Operations Manager is <b>being prepared for re
 verH:"Verify a certificate",verP:"Enter the certificate number shown on the certificate. Example: DCCI-2026-000001",verBtn:"Verify",
 foot:"<b>Data Center Competency Institute (DCCI™)</b> is a data center qualification brand operated by BLUE IT.<br>BLUE IT · CEO Sungmin Lim · Business registration no. 625-15-02359<br>12 Maeyeong-ro 310beon-gil, Yeongtong-gu, Suwon, Gyeonggi-do, Korea · Tel +82-70-8095-5710 · admin@dcci.co.kr<br>Mail-order business report no.: 2026-Suwon Yeongtong-1408 (<a href=\"https://www.ftc.go.kr/bizCommPop.do?wrkr_no=6251502359\" target=\"_blank\" rel=\"noopener\">Verify business info</a>)<br>This is a private qualification, not a national qualification of Korea.<div class=\"legal\">Type: private qualification (registration in preparation) · Registration no.: to be posted · Operator: BLUE IT (CEO Sungmin Lim)<br>Privacy: names and email addresses received by email are used only to reply and send launch updates, are not shared, and are deleted once no longer needed.<br>Trademarks: DCCI™ and 데이터센터역량인증원™ are trademarks filed in Korea by Sungmin Lim on 24 Nov 2026 and are pending examination (DCCI application no. 40-2026-0255463, classes 9, 16, 41). Unauthorized use is prohibited.<br>&copy; 2026 BLUE IT. All rights to the content of this page belong to BLUE IT (Sungmin Lim).</div>"
 };
+var JA={
+brand:"DCCI<sup class=\"tm\">™</sup> <span style=\"white-space:nowrap\">データセンター</span><span style=\"white-space:nowrap\">能力認証院</span>",brandSub:"데이터센터역량인증원<sup class=\"tm\">™</sup>",
+navAbout:"資格について",navExam:"試験案内",navSub:"出題科目",navApply:"受験方法",navCbt:"CBT体験",navBuy:"対策テキスト購入",buyBarT:"<b class=\"bb-full\">『データセンター運用管理士 2級 対策テキスト』</b>Kindle版 好評発売中",buyBarA:"Amazonで購入する →",ctaCbt:"CBT模擬試験を体験",ctaCbt2:"Web CBT模擬試験を体験する",navVerify:"真偽確認",
+h1:"データセンターを止めない人のための資格",
+heroP:"データセンター運用管理士 2級は、韓国で民間資格として登録準備中の資格です。データセンターの概要・標準、電力、冷却、ITインフラ、消防・セキュリティ・安全、運用実務の基礎まで、現場の運用担当者が毎日使う知識を評価します。登録後はWeb CBTで実施し、結果と合格証をすぐにお届けする予定です。",
+ctaApply:"開始のお知らせを受け取る",ctaAbout:"資格について",
+rackTitle:"データセンター運用管理士 2級",q60:"60問",q10:"10問",q8:"8問",q16:"16問",
+s1:"データセンター概要・標準",s2:"電力",s3:"冷却",s4:"ITインフラ",s5:"消防・セキュリティ・安全",s6:"運用実務の基礎",
+aboutH:"この資格をつくった理由",
+aboutLead:"データセンターは、金融・通信・行政サービス、そしてAIを支えています。この資格は、データセンターを24時間安全に運用できる人材を育てるためのものです。目指すのは試験のテクニックではなく、現場ですぐに使える運用力です。",
+w1h:"運用人材が足りない",w1p:"韓国ではAI向けを中心にデータセンターが急増していますが、電力・冷却・IT・セキュリティをまとめて理解する運用担当者はまだ多くありません。新人や異業種からの転職者には、学ぶための明確な基準が必要です。",
+w2h:"運用に特化した資格が少ない",w2p:"既存の講座や海外資格は設計・設備中心だったり、英語のみで行われたりすることが多いです。この資格は巡回点検、入退室管理、作業許可、障害対応など、運用担当者が毎日行う業務を韓国語と英語で扱います。",
+w3h:"事故は運用で防ぐ",w3p:"データセンターの火災などの事故は、大規模なサービス停止につながってきました。バッテリー管理、消火設備、作業統制を理解した人が現場にいることが、同じ事故を減らす近道です。",
+whoH:"対象となる方",whoP:"データセンターの運用・設備・セキュリティ部門の新人、ITインフラや電気・機械分野から移る方、社内サーバールームの管理者、協力会社のエンジニア、教育課程の受講生。",
+navVision:"ビジョン",visH:"ビジョンと目標",visTag:"VISION",
+visV:"データセンター運用能力の基準をつくる",
+visM:"データセンター能力認証院は、データセンターを安全に運用できる人を見つけ、育て、認めるための基準になることを目指します。企業が安心して採用でき、運用担当者が自分の力を証明できるよう、公正で実務中心の資格を運営します。",
+g1h:"公式対策テキストの出版",g1p:"データセンター運用管理士 2級の公式対策テキストを自ら出版します。現場の運用経験をもとに正確なデータと注釈を収め、試験対策にも実務の教材にも使えるようにしています。",
+gbBy:"著者 イム・ソンミン · 発行 BLUE IT",ed1tag:"2027年2月発行予定",ed1t:"データセンター運用管理士 2級 対策テキスト（韓国語版）",ed1m:"韓国語 · 紙の書籍（教保文庫 POD） · 定価 33,000ウォン<br>ISBN 979-11-223379-0-7 (13000)",ed2tag:"発売中",ed2m:"日本語 · Kindle電子書籍 · ¥1,250",
+g2h:"運用人材の育成と共通の基準",g2p:"教育課程とオンライン講義で運用人材を育て、企業や機関が採用・職務教育・協力会社管理に共通して使える運用能力の基準をつくります。",
+g3h:"誰でも受けられる試験",g3p:"Web CBT、韓国語・英語での受験、即時の結果発表により、時間や場所を選ばず受験できるようにします。",
+g4h:"東南アジアへ広がる資格",g4p:"データセンターが急増している東南アジアの国々へ資格を広げます。対策テキストを英語や現地語に翻訳して現地で出版し、同じ基準のCBT試験を現地語で提供します。",
+r1b:"STEP 1",r1h:"資格のスタート",r1p:"データセンター運用管理士 2級の実施、公式対策テキストの発行、Web CBTの開始",
+r2b:"STEP 2",r2h:"教育と普及",r2p:"オンライン講義・教育課程の運営、企業や学校との団体試験・提携の拡大",
+r3b:"STEP 3",r3h:"海外展開",r3p:"英語・現地語の対策テキストを現地で出版し、東南アジア各国で現地語のCBT試験を実施",
+examH:"試験案内（予定）",f1b:"60問",f1s:"4択式",f2b:"60分",f2s:"Web CBT",f3b:"韓国語・英語",f3s:"受験言語を選択",f4b:"即時に結果発表",f4s:"合格証PDFをメールで送付",
+passTxt:"<b>100点満点中70点以上</b>、かつ全科目で40点以上で合格です。",
+feeList:"<li><b>受験料</b> 33,000ウォン（付加価値税込み） · 合格証の発行・再発行は無料</li><li><b>返金</b> 試験日の7日前まで全額 · 6日前から前日まで50% · 当日・欠席は返金なし</li><li><b>有効期間</b> 取得日から3年 · 8時間の継続教育を修了すると3年更新</li>",
+regNote:"民間資格の登録番号は、登録完了後にこのページで公開します。詳しくは<a href=\"/rules/?lang=en\">資格管理・運営規程（英語）</a>をご覧ください。",
+subH:"出題科目",
+d1:"10問 · データセンターの構成と種類、可用性と冗長化、Tier、TIA-942、EN 50600、ISO/IEC 22237、PUE、韓国の関連法規",d2:"8問 · 受変電設備、UPS、非常用発電機、ATS・STS、ラックまでの配電、電力の基本計算",d3:"8問 · 熱と単位、ASHRAE推奨範囲、ホットアイル・コールドアイルの気流、冷却設備、液冷",d4:"10問 · ラック、構造化配線、ネットワークの冗長化、サーバー、ストレージとバックアップ、機器の設置",d5:"8問 · ガス系消火設備、入退室管理、CCTVと物理セキュリティ、媒体の廃棄、LOTO、関連法令、事故事例",d6:"16問 · 勤務の引き継ぎ、SOP・MOP・EOP、変更・障害・容量管理、資産・ベンダー管理、BCP・DRP",
+applyH:"受験方法（登録後）",st1b:"お問い合わせ",st1p:"開始のお知らせの後、希望日と受験人数をメールでお知らせください。",st2b:"試験回の案内",st2p:"試験回コードと受験番号をメールでお送りします。",st3b:"Web CBTで受験",st3p:"指定の時間にログインし、60分の試験を受けます。",st4b:"結果の確認",st4p:"提出するとすぐに結果が表示され、合格証がメールで届きます。",
+t1h:"定期試験",t1p:"年1回、公告した日程で実施します。",t2h:"随時CBT",t2p:"年間を通じてWeb試験の回を開きます。",t3h:"団体試験",t3p:"10名以上の団体は専用の試験回を申し込めます。",
+mailBtn:"admin@dcci.co.kr でお知らせを受け取る",
+notice:"<b>ご案内</b> データセンター運用管理士は現在、韓国で<b>民間資格の登録を準備中</b>です。登録が完了するまでは試験の実施や受験の受付は行いません。登録番号は登録後にこのページで公開します。以下の試験内容は実施予定の案内です。",
+verH:"合格証の真偽確認",verP:"合格証に記載された証書番号を入力してください。例：DCCI-2026-000001",verBtn:"確認",
+foot:"<b>データセンター能力認証院（DCCI™）</b>は、BLUE IT（ブルーアイティー）が運営するデータセンター資格ブランドです。<br>商号 BLUE IT（블루아이티） · 代表 イム・ソンミン（임성민） · 事業者登録番号 625-15-02359<br>韓国 京畿道 水原市 霊通区 梅栄路310番ギル 12（경기도 수원시 영통구 매영로310번길 12） · 電話 +82-70-8095-5710 · admin@dcci.co.kr<br>通信販売業申告番号：第2026-水原霊通-1408号（<a href=\"https://www.ftc.go.kr/bizCommPop.do?wrkr_no=6251502359\" target=\"_blank\" rel=\"noopener\">事業者情報の確認</a>）<br>本資格は韓国の民間資格であり、国家資格ではありません。<div class=\"legal\">資格の種類：民間資格（登録準備中） · 登録番号：登録後に掲載 · 資格管理・運営機関：BLUE IT（代表 イム・ソンミン）<br>個人情報について：メールでのお問い合わせでいただいたお名前・メールアドレスは、回答と実施のお知らせにのみ使用し、目的を達成した後は遅滞なく破棄します。外部には提供しません。<br>商標について：「데이터센터역량인증원」と「DCCI」は、イム・ソンミンが2026年11月24日に韓国特許庁へ出願した商標で、現在審査中です（DCCI 出願番号 40-2026-0255463、第9・16・41類）。登録前のため™で表示しています。無断使用を禁じます。<br>&copy; 2026 BLUE IT. このページの文章に関する権利はBLUE IT（代表 イム・ソンミン）に帰属します。</div>"
+};
 var KO={};
 document.querySelectorAll('[data-i]').forEach(function(el){var k=el.getAttribute('data-i');if(!(k in KO))KO[k]=el.innerHTML;});
-var MSG={ko:{bad:"증서번호 형식이 맞지 않습니다. DCCI-연도-일련번호 6자리로 입력하세요.",wait:"진위 확인은 시험 서버 개통 후 이용할 수 있습니다."},en:{bad:"That number is not in the right format. Use DCCI-year-6 digits.",wait:"Verification will be available once the exam server is live."}};
+var MSG={ko:{bad:"증서번호 형식이 맞지 않습니다. DCCI-연도-일련번호 6자리로 입력하세요.",wait:"진위 확인은 시험 서버 개통 후 이용할 수 있습니다."},en:{bad:"That number is not in the right format. Use DCCI-year-6 digits.",wait:"Verification will be available once the exam server is live."},ja:{bad:"証書番号の形式が正しくありません。DCCI-年-6桁の番号で入力してください。",wait:"真偽確認は試験サーバーの開設後にご利用いただけます。"}};
 var cur='ko';
-function setLang(l){cur=l;var d=l==='en'?EN:KO;
+function setLang(l){if(l!=='en'&&l!=='ja')l='ko';cur=l;var d=l==='en'?EN:(l==='ja'?JA:KO);
   document.querySelectorAll('[data-i]').forEach(function(el){var k=el.getAttribute('data-i');if(d[k]!=null)el.innerHTML=d[k];});
   document.documentElement.lang=l;
-  document.title=l==='en'?'Data Center Certification | DC Operations Manager Level 2 — DCCI':'데이터센터 자격증 | 데이터센터운영관리사 2급 — 데이터센터역량인증원';
+  document.title=l==='en'?'Data Center Certification | DC Operations Manager Level 2 — DCCI':(l==='ja'?'データセンター資格 | データセンター運用管理士 2級 — DCCI':'데이터센터 자격증 | 데이터센터운영관리사 2급 — 데이터센터역량인증원');
   document.querySelectorAll('.lang button').forEach(function(b){b.setAttribute('aria-pressed',b.dataset.lang===l?'true':'false');});
   try{localStorage.setItem('dcci-lang',l);}catch(e){}
 }
 document.querySelectorAll('.lang button').forEach(function(b){b.addEventListener('click',function(){setLang(b.dataset.lang);});});
 var saved=null;try{saved=localStorage.getItem('dcci-lang');}catch(e){}
-if(saved==='en'||(!saved&&/^en/i.test(navigator.language||'')&&!/^ko/i.test(navigator.language||'')))setLang('en');
+var q=(location.search.match(/[?&]lang=(en|ja|ko)\b/)||[])[1];
+setLang(q||(saved==='ja'||saved==='ko'||saved==='en'?saved:'en'));
 </script>
 </body>
 </html>
