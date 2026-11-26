@@ -59,7 +59,16 @@ header.top{display:flex;justify-content:space-between;align-items:center;padding
 .lang{display:inline-flex;border:1px solid var(--line);border-radius:4px;overflow:hidden}
 .lang button{border:0;background:transparent;color:var(--muted);font:inherit;font-size:13px;padding:5px 10px;cursor:pointer}
 .lang button[aria-pressed="true"]{background:var(--ink);color:var(--bg)}
-nav a{margin-left:22px;color:var(--ink);text-decoration:none;font-size:15px}
+nav a{margin-left:20px;color:var(--ink);text-decoration:none;font-size:15px;white-space:nowrap}
+nav{display:flex;align-items:center}
+.buybar{background:var(--rack);color:#E4EAEE;font-size:14px}
+.buybar .wrap{display:flex;justify-content:center;align-items:center;gap:14px;flex-wrap:wrap;padding-top:9px;padding-bottom:9px;text-align:center}
+.buybar a{color:#fff;font-weight:600;text-decoration:none;background:var(--cold);border-radius:4px;padding:4px 12px;white-space:nowrap}
+.buybar .bb-full{font-weight:400}
+@media (max-width:760px){.buybar{font-size:13px}.buybar .bb-full{display:none}.buybar .wrap{gap:10px}}
+.buybar a:hover{filter:brightness(1.12)}
+nav a.nav-buy{border:1px solid var(--cold);color:var(--cold);border-radius:4px;padding:5px 12px;font-weight:600;white-space:nowrap}
+nav a.nav-buy:hover{background:var(--cold);color:#fff}
 nav a:hover{color:var(--cold)}
 @media (max-width:760px){nav{display:none}}
 
@@ -160,6 +169,7 @@ footer b{color:var(--ink)}
 </style>
 </head>
 <body>
+<div class="buybar"><div class="wrap"><span data-i="buyBarT"><b class="bb-full">『데이터센터운영관리사 2급』 </b>수험서 일본어판 Kindle 판매 중</span><a href="https://www.amazon.co.jp/dp/B0HMPXVLQD" target="_blank" rel="noopener" data-i="buyBarA">아마존 재팬에서 구매하기 →</a></div></div>
 <div class="wrap">
   <header class="top">
     <div class="left">
@@ -168,7 +178,7 @@ footer b{color:var(--ink)}
         <button type="button" data-lang="ko" aria-pressed="true">한글</button><button type="button" data-lang="en" aria-pressed="false">EN</button>
       </div>
     </div>
-    <nav><a href="#about" data-i="navAbout">자격 소개</a><a href="#vision" data-i="navVision">비전</a><a href="#exam" data-i="navExam">시험 안내</a><a href="#subjects" data-i="navSub">출제 과목</a><a href="#apply" data-i="navApply">응시 방법</a><a href="/cbt/" data-i="navCbt">CBT 체험</a></nav>
+    <nav><a href="#about" data-i="navAbout">자격 소개</a><a href="#vision" data-i="navVision">비전</a><a href="#exam" data-i="navExam">시험 안내</a><a href="#subjects" data-i="navSub">출제 과목</a><a href="#apply" data-i="navApply">응시 방법</a><a href="/cbt/" data-i="navCbt">CBT 체험</a><a class="nav-buy" href="https://www.amazon.co.jp/dp/B0HMPXVLQD" target="_blank" rel="noopener" data-i="navBuy">수험서 구매</a></nav>
   </header>
   <p class="notice" data-i="notice"><b>안내</b> 데이터센터운영관리사는 현재 <b>민간자격 등록을 준비 중</b>입니다. 등록이 완료되기 전에는 시험을 시행하거나 응시 접수를 받지 않으며, 등록번호는 등록 후 이 페이지에 게시합니다. 아래 시험 내용은 시행 예정 안입니다.</p>
 
@@ -215,7 +225,7 @@ footer b{color:var(--ink)}
         <div class="gb-txt"><h3><i>01</i><span data-i="g1h">공식 수험서 출판</span></h3><p data-i="g1p">데이터센터운영관리사 2급 공식 수험서를 직접 출판합니다. 현장 운영 경험을 바탕으로 정확한 데이터와 주석을 담아, 시험 준비와 실무 교재로 함께 쓸 수 있게 만듭니다.</p><p class="gb-by" data-i="gbBy">저자 임성민 · 발행 블루아이티</p></div>
         <ul class="editions">
           <li><div class="ed-cover ko" aria-hidden="true"><b>2급</b></div><div class="ed-body"><span class="ed-tag soon" data-i="ed1tag">2027년 2월 발행 예정</span><strong data-i="ed1t">데이터센터운영관리사 2급 수험서</strong><span class="ed-meta" data-i="ed1m">한국어 · 종이책(교보문고 POD) · 정가 33,000원<br>ISBN 979-11-223379-0-7 (13000)</span></div></li>
-          <li><div class="ed-cover ja" aria-hidden="true"><b>2級</b></div><div class="ed-body"><span class="ed-tag live" data-i="ed2tag">판매 중</span><strong lang="ja">データセンター運用管理士 2級 対策テキスト</strong><span class="ed-meta" data-i="ed2m">일본어 · Kindle 전자책 · ¥1,250</span><a class="ed-btn" href="https://www.amazon.co.jp/dp/B0HMPXVLQD" target="_blank" rel="noopener" data-i="ed2btn">아마존 재팬에서 구매 →</a></div></li>
+          <li><div class="ed-cover ja" aria-hidden="true"><b>2級</b></div><div class="ed-body"><span class="ed-tag live" data-i="ed2tag">판매 중</span><strong lang="ja">データセンター運用管理士 2級 対策テキスト</strong><span class="ed-meta" data-i="ed2m">일본어 · Kindle 전자책 · ¥1,250</span></div></li>
         </ul>
       </div>
       <div><h3><i>02</i><span data-i="g2h">운영 인재 양성과 공통 기준</span></h3><p data-i="g2p">교육과정과 온라인 강의로 운영 인재를 키우고, 기업과 기관이 채용·직무 교육·협력사 관리에 함께 쓰는 운영 역량 기준을 만듭니다.</p></div>
@@ -288,7 +298,7 @@ footer b{color:var(--ink)}
 <script>
 var EN={
 brand:"DCCI<sup class=\"tm\">™</sup> Data Center Competency Institute",brandSub:"데이터센터역량인증원<sup class=\"tm\">™</sup>",
-navAbout:"About",navExam:"Exam",navSub:"Subjects",navApply:"How to apply",navCbt:"CBT demo",ctaCbt:"Try the CBT practice exam",ctaCbt2:"Try the web CBT practice exam",navVerify:"Verify",
+navAbout:"About",navExam:"Exam",navSub:"Subjects",navApply:"How to apply",navCbt:"CBT demo",navBuy:"Buy book",buyBarT:"<b class=\"bb-full\"><i>Data Center Operations Manager Level 2</i> </b>Study guide — Japanese Kindle edition on sale",buyBarA:"Buy on Amazon Japan →",ctaCbt:"Try the CBT practice exam",ctaCbt2:"Try the web CBT practice exam",navVerify:"Verify",
 h1:"A qualification for the people who keep data centers running",
 heroP:"Data Center Operations Manager Level 2 is a private qualification being prepared for registration in Korea. It will test the knowledge operators use every day: data center standards, power, cooling, IT infrastructure, fire, security and safety, and day-to-day operations. Once registered, the exam will run as a web CBT with instant results and certificates.",
 ctaApply:"Get launch updates",ctaAbout:"About the qualification",
@@ -304,7 +314,7 @@ navVision:"Vision",visH:"Vision and goals",visTag:"VISION",
 visV:"Setting the standard for data center operations competency",
 visM:"The Data Center Competency Institute aims to be the standard for finding, developing and recognizing people who can run data centers safely. We run a fair, practice-based qualification so employers can hire with confidence and operators can prove what they can do.",
 g1h:"Publishing the official study guide",g1p:"We publish the official Level 2 study guide ourselves. Built on real operations experience, with accurate data and notes, it serves both as exam prep and as a practical handbook.",
-gbBy:"Author: Sungmin Lim · Publisher: BLUE IT",ed1tag:"Coming February 2027",ed1t:"Data Center Operations Manager Level 2 Study Guide",ed1m:"Korean · Print (Kyobo Book Centre POD) · KRW 33,000<br>ISBN 979-11-223379-0-7 (13000)",ed2tag:"On sale",ed2m:"Japanese · Kindle eBook · ¥1,250",ed2btn:"Buy on Amazon Japan →",
+gbBy:"Author: Sungmin Lim · Publisher: BLUE IT",ed1tag:"Coming February 2027",ed1t:"Data Center Operations Manager Level 2 Study Guide",ed1m:"Korean · Print (Kyobo Book Centre POD) · KRW 33,000<br>ISBN 979-11-223379-0-7 (13000)",ed2tag:"On sale",ed2m:"Japanese · Kindle eBook · ¥1,250",
 g2h:"Developing operators, setting a standard",g2p:"We develop operators through courses and online lectures, and build a competency standard that companies and institutions can use for hiring, job training and managing partners.",
 g3h:"An exam anyone can take",g3p:"Web CBT, Korean or English, and instant results let candidates take the exam wherever and whenever suits them.",
 g4h:"Expanding into Southeast Asia",g4p:"We will bring the qualification to fast-growing data center markets in Southeast Asia, translating the study guide into English and local languages for local publication and offering the same CBT exam in local languages.",
