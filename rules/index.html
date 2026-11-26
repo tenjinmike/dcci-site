@@ -6,10 +6,13 @@
 <title>자격관리·운영 규정 | 데이터센터운영관리사 — 데이터센터역량인증원</title>
 <meta name="description" content="데이터센터운영관리사 2급 민간자격의 관리·운영 규정 (검정방법, 과목, 합격기준, 응시료와 환불, 유효기간 3년과 보수교육 8시간). 한국어·English.">
 <link rel="canonical" href="https://dcci.co.kr/rules/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@400;500;700&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
 <style>
 :root{--ink:#0f1b2d;--muted:#5b6575;--line:#d9dee6;--accent:#1d4ed8;--bg:#f7f8fa}
 *{box-sizing:border-box}
-body{margin:0;font-family:"Pretendard","Noto Sans KR","Apple SD Gothic Neo",system-ui,sans-serif;color:var(--ink);background:var(--bg);line-height:1.75;word-break:keep-all}
+body{margin:0;font-family:"IBM Plex Sans KR","Apple SD Gothic Neo","Malgun Gothic",system-ui,sans-serif;color:var(--ink);background:var(--bg);line-height:1.75;word-break:keep-all}
 .wrap{max-width:860px;margin:0 auto;padding:20px 18px 60px}
 header.top{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:18px}
 .brand{font-weight:800;color:var(--ink);text-decoration:none}
@@ -30,15 +33,23 @@ header.top{display:flex;justify-content:space-between;align-items:center;gap:12p
 .dl a{color:var(--accent)}
 footer{color:var(--muted);font-size:.85rem;margin-top:24px}
 [hidden]{display:none!important}
+html:lang(en) body{font-family:"IBM Plex Sans","IBM Plex Sans KR",system-ui,sans-serif}
+html:lang(ja) body{font-family:"IBM Plex Sans JP","IBM Plex Sans KR","Hiragino Sans","Yu Gothic UI",sans-serif;font-feature-settings:"palt";word-break:normal;line-break:strict;overflow-wrap:anywhere}
+.brand{font-weight:700;font-size:18px;line-height:1.35}
+.brand small{font-weight:400;font-size:12px;letter-spacing:.02em}
+.lang{display:inline-flex;border:1px solid var(--line);border-radius:4px;overflow:hidden;background:#fff}
+.lang button{border:0;border-radius:0;padding:5px 10px;font-size:13px;color:var(--muted);background:transparent}
+.lang button[aria-pressed="true"]{background:var(--ink);color:#fff}
 </style>
 </head>
 <body>
 <div class="wrap">
 <header class="top">
-  <a class="brand" href="/">데이터센터역량인증원<sup class="tm">™</sup><small>Data Center Competency Institute (DCCI<sup class="tm">™</sup>)</small></a>
-  <div class="lang"><button type="button" data-l="ko" aria-pressed="true">한국어</button> <button type="button" data-l="en" aria-pressed="false">English</button></div>
+  <a class="brand" href="/"><span id="bn">데이터센터역량인증원<sup class="tm">™</sup></span><small id="bs">Data Center Competency Institute (DCCI<sup class="tm">™</sup>)</small></a>
+  <div class="lang"><button type="button" data-l="en" aria-pressed="false">EN</button><button type="button" data-l="ja" aria-pressed="false" lang="ja">日本語</button><button type="button" data-l="ko" aria-pressed="true" lang="ko">한글</button></div>
 </header>
 <p class="dl" id="dl-ko">PDF 내려받기: <a href="/rules/dcci-rules-ko.pdf">한국어</a> · <a href="/rules/dcci-rules-en.pdf">English</a> · <a href="/">← 홈으로</a></p>
+<p class="dl" id="dl-ja" hidden>PDFダウンロード：<a href="/rules/dcci-rules-ko.pdf">韓国語（正本）</a> · <a href="/rules/dcci-rules-en.pdf">English</a> · <a href="/?lang=ja">← ホームへ</a></p>
 <p class="dl" id="dl-en" hidden>Download PDF: <a href="/rules/dcci-rules-en.pdf">English</a> · <a href="/rules/dcci-rules-ko.pdf">한국어</a> · <a href="/">← Home</a></p>
 <article class="doc" id="ko" lang="ko">
 <h1 id="데이터센터운영관리사-자격관리운영-규정">데이터센터운영관리사
@@ -911,6 +922,180 @@ recovery, records and reporting</td>
 </table>
 
 </article>
+<article class="doc" id="ja" lang="ja" hidden>
+<h1>データセンター運用管理士<br>資格管理・運営規程</h1>
+<p>2026年12月1日制定<br><em>本日本語版は参考訳です。韓国語版と内容が異なる場合は、韓国語版が優先します。</em></p>
+<h2>第1章 総則</h2>
+<h3>第1条（目的）</h3>
+<p>この規程は、BLUE IT（ブランド名：データセンター能力認証院〈데이터센터역량인증원〉、以下「管理機関」という）が韓国「資格基本法」第17条に基づき新設し、管理・運営するデータセンター運用管理士資格の検定および管理・運営に必要な事項を定めることを目的とする。</p>
+<h3>第2条（資格の名称、種目および等級）</h3>
+<p>① 資格の名称（種目）は「データセンター運用管理士」（韓国語名：데이터센터운영관리사）とする。<br>
+② 資格の等級は2級の単一等級とする。<br>
+③ この資格は韓国「資格基本法」に基づく登録民間資格であり、国家資格または国家公認民間資格ではない。</p>
+<h3>第3条（管理機関）</h3>
+<p>① この資格の管理・運営機関は次のとおりとする。</p>
+<table>
+<thead><tr><th>区分</th><th>内容</th></tr></thead>
+<tbody>
+<tr><td>機関名（商号）</td><td>BLUE IT（블루아이티）</td></tr>
+<tr><td>ブランド</td><td>データセンター能力認証院（데이터센터역량인증원、Data Center Competency Institute、DCCI）</td></tr>
+<tr><td>代表者</td><td>イム・ソンミン（임성민）</td></tr>
+<tr><td>事業者登録番号</td><td>625-15-02359</td></tr>
+<tr><td>所在地</td><td>韓国 京畿道 水原市 霊通区 梅栄路310番ギル 12（경기도 수원시 영통구 매영로310번길 12）</td></tr>
+<tr><td>ホームページ・お問い合わせ</td><td>dcci.co.kr / <a href="mailto:admin@dcci.co.kr">admin@dcci.co.kr</a></td></tr>
+</tbody>
+</table>
+<p>② 管理機関は、資格証、ホームページおよび広告物に、資格の種類、登録番号、管理・運営機関を表示する。</p>
+<h2>第2章 資格の職務と検定</h2>
+<h3>第4条（資格保有者の職務内容）</h3>
+<p>① データセンター運用管理士は、データセンターの電力・冷却・ITインフラ・消防および物理セキュリティ設備の状態を監視・点検し、標準運用手順に従って交代勤務による運用、障害の初動対応、変更作業の管理、資産・容量の管理および記録・報告の業務を行うことを職務内容とする。<br>
+② 等級別の職務内容は次のとおりとする。</p>
+<table>
+<thead><tr><th>資格名</th><th>等級</th><th>等級別の職務内容</th></tr></thead>
+<tbody>
+<tr><td>データセンター運用管理士</td><td>2級</td><td>データセンターの運用現場で電力・冷却・ITインフラ・消防・セキュリティ設備の状態を監視・点検し、標準運用手順に従って交代勤務による運用、障害の初動対応と報告、作業・変更管理、資産・容量管理の業務を行う。</td></tr>
+</tbody>
+</table>
+<h3>第5条（検定基準）</h3>
+<p>① 管理機関は、データセンターの運用業務を円滑に行える職務能力を備えているかどうかを基準として検定基準を定める。<br>
+② 等級別の検定基準は次のとおりとする。</p>
+<table>
+<thead><tr><th>資格名</th><th>等級</th><th>検定基準</th></tr></thead>
+<tbody>
+<tr><td>データセンター運用管理士</td><td>2級</td><td>データセンターの電力・冷却・ITインフラ・消防・セキュリティ設備の構成と原理、関連する標準と法令に関する基礎知識をもとに設備を点検し、運用手順に従って障害の初動対応、変更・資産・容量管理などの運用実務を行える能力を有すること</td></tr>
+</tbody>
+</table>
+<h3>第6条（検定方法および検定科目）</h3>
+<p>① 検定は筆記試験とし、4択式の客観式60問を60分間、コンピュータを用いた試験（CBT）で実施する。<br>
+② 等級別の検定方法と検定科目は次のとおりとする。</p>
+<table>
+<thead><tr><th>等級</th><th>検定方法</th><th>検定科目</th><th>問題数</th></tr></thead>
+<tbody>
+<tr><td>2級</td><td>筆記</td><td>1. データセンター概要・標準</td><td>10</td></tr>
+<tr><td></td><td></td><td>2. 電力</td><td>8</td></tr>
+<tr><td></td><td></td><td>3. 冷却</td><td>8</td></tr>
+<tr><td></td><td></td><td>4. ITインフラ</td><td>10</td></tr>
+<tr><td></td><td></td><td>5. 消防・セキュリティ・安全</td><td>8</td></tr>
+<tr><td></td><td></td><td>6. 運用実務の基礎</td><td>16</td></tr>
+<tr><td></td><td></td><td>計</td><td>60</td></tr>
+</tbody>
+</table>
+<p>③ 科目別の主な出題範囲は別表1のとおりとする。<br>
+④ 試験は、韓国語または英語のうち受験者が選択した言語で実施する。</p>
+<h3>第7条（受験資格）</h3>
+<p>① 資格検定の受験資格は次のとおりとする。</p>
+<table>
+<thead><tr><th>等級</th><th>受験資格</th></tr></thead>
+<tbody><tr><td>2級</td><td>制限なし</td></tr></tbody>
+</table>
+<p>② 管理機関または他の機関が運営する教育課程の修了は、受験の要件ではない。</p>
+<h3>第8条（合格基準）</h3>
+<p>① 100点満点に換算して全科目の平均が70点以上であり、かつ各科目が40点以上の者を合格者とする。<br>
+② 科目の点数は、当該科目の正答数をその科目の問題数で割った値に100を掛けて算出する。</p>
+<h2>第3章 検定の人員と組織</h2>
+<h3>第9条（検定人員）</h3>
+<p>① 管理機関は、次の人員で資格検定を運営する。</p>
+<table>
+<thead><tr><th>区分</th><th>人数</th><th>担当者</th><th>資格要件</th></tr></thead>
+<tbody>
+<tr><td>検定管理責任者（出題・検討委員を兼任）</td><td>1名</td><td>イム・ソンミン（代表）</td><td>データセンター運用の実務経験15年以上、CDCP保有</td></tr>
+<tr><td>試験監督委員</td><td>各回1名以上</td><td>必要に応じて委嘱</td><td>管理機関が定めた監督教育の修了者</td></tr>
+</tbody>
+</table>
+<p>② 出題・検討委員は、出題した問題を2週間以上経過した後に再度検討し、各回の問題別正答率を分析して誤りのある問題を是正する。<br>
+③ 受験者の規模が拡大した場合、管理機関はデータセンター実務経験5年以上の者の中から出題・検討委員を追加で委嘱することができる。<br>
+④ 出題・検討委員および試験監督委員は、試験情報を漏らさない旨の秘密保持誓約書を提出する。</p>
+<h3>第10条（管理・運営組織と業務分掌）</h3>
+<p>管理機関は、検定管理責任者の下に次の業務を置く。</p>
+<ol type="1">
+<li>検定企画：試験の公告、実施計画、試験回の編成、受験料と返金の管理</li>
+<li>出題・採点：問題バンクの構築と管理、出題の検討、採点基準の管理、問題分析</li>
+<li>検定管理：願書の受付、受験者の本人確認、試験監督、不正行為の処理、異議申立ての処理</li>
+<li>資格管理：合格者名簿と資格発行台帳の管理、資格証の発行と再発行、真偽確認、資格の更新と継続教育、資格の取消し</li>
+</ol>
+<h2>第4章 検定の実施</h2>
+<h3>第11条（試験の実施）</h3>
+<p>① 試験は次のとおり実施する。</p>
+<ol type="1">
+<li>定期試験：年1回以上</li>
+<li>随時試験：定期試験のほか、管理機関が定める日</li>
+<li>団体試験：10名以上の団体が申し込んだ場合、別の試験回として実施</li>
+</ol>
+<p>② 管理機関は、試験日の30日前までに試験日程、受験方法、受験料をホームページで公告する。随時試験・団体試験は申込者に個別に通知することができる。<br>
+③ 試験は管理機関のWebベースのCBTシステムで実施し、団体試験は管理機関が指定または承認した場所で、監督委員の立会いのもとで実施することができる。</p>
+<h3>第12条（願書の受付）</h3>
+<p>① 受験者は、ホームページまたはメールで受験願書を提出し、受験料を納付する。<br>
+② 管理機関は、受付を完了した受験者に試験回コードと受験番号を個別に発行する。</p>
+<h3>第13条（受験者の本人確認）</h3>
+<p>① 試験会場では、試験監督委員が受験票と受験者が持参した身分証明書（住民登録証、運転免許証、パスポートなど）を照合して本人であることを確認する。<br>
+② オンラインCBTでは、受験者が個別に発行された受験番号で接続した後、試験開始前にカメラ（Webカメラ）で身分証明書と顔を映させ、試験監督委員が願書の内容と照合して確認する。<br>
+③ 本人確認ができない場合は受験することができない。</p>
+<h3>第14条（問題の出題と問題バンクの管理）</h3>
+<p>① 管理機関は、別表1の出題範囲に従って問題バンクを構築し、各回ごとに科目別の問題数に合わせて問題を抽出して出題する。<br>
+② 問題バンクへのアクセス権限は検定管理責任者に限定し、アクセス記録を残す。<br>
+③ 国際標準・法令の原文をそのまま転載した問題は使用せず、法令に関する問題は出題前に現行の条文を確認する。</p>
+<h3>第15条（不正行為）</h3>
+<p>① 次の行為をした者は、その試験を無効とし、3年間受験を制限する。</p>
+<ol type="1">
+<li>他人に代わって受験し、または他人に代わりに受験させる行為</li>
+<li>許可されていない資料・機器、または他人の助けを受ける行為</li>
+<li>試験問題を複製・撮影・流出させる行為</li>
+</ol>
+<p>② 管理機関は、不正行為が確認された場合、すでに発行した資格を取り消す。</p>
+<h3>第16条（採点と合格発表）</h3>
+<p>① 採点は、CBTシステムが正答表に基づいて自動で行い、人または人工知能による裁量判断は置かない。<br>
+② 受験者は、答案の提出直後に点数と合否を確認することができる。</p>
+<h3>第17条（異議申立て）</h3>
+<p>① 受験者は、試験日から7日以内に、問題の誤りについて書面またはメールで異議を申し立てることができる。<br>
+② 管理機関は、受付日から14日以内に検討結果を回答し、誤りが認められた問題は当該試験回の受験者全員を正答として扱う。</p>
+<h2>第5章 受験料と資格の管理</h2>
+<h3>第18条（受験料と返金）</h3>
+<p>① 受験料は33,000ウォン（付加価値税込み）とする。<br>
+② 受験料の返金基準は次のとおりとする。</p>
+<ol type="1">
+<li>試験日の7日前までに取消し：全額返金</li>
+<li>試験日の6日前から前日までに取消し：50%返金</li>
+<li>試験当日の取消しまたは欠席：返金しない</li>
+<li>管理機関の都合により試験を実施できなかった場合：全額返金</li>
+</ol>
+<h3>第19条（資格証の発行）</h3>
+<p>① 管理機関は、合格者に、資格番号、氏名、生年月日、資格名・等級、取得日、有効期間、民間資格登録番号、管理・運営機関を記載した資格証（合格証）を電子文書（PDF）で発行する。<br>
+② 資格番号は「DCCI-国コード-等級-取得年の下2桁-試験種別-ランダム5桁」の形式で付与し、一度付与した番号は再使用しない。<br>
+③ 管理機関は、ホームページで資格番号と氏名により資格の真偽と有効性を確認できるようにする。<br>
+④ 管理機関は、資格発行台帳を作成して永久に保管する。<br>
+⑤ 資格証の発行と再発行には費用を徴収しない。</p>
+<h3>第20条（資格の有効期間と更新）</h3>
+<p>① この資格の有効期間は、取得日から3年とする。<br>
+② 資格を更新しようとする者は、有効期間が終了する前に管理機関が運営する継続教育8時間を修了し、更新を申請する。管理機関は修了を確認した後、有効期間を3年延長し、資格証を再発行する。<br>
+③ 継続教育は、データセンター運用に関する技術・標準・法令の変更点と事故事例を扱い、オンラインまたは集合教育で運営する。教育日程と費用はホームページで公告する。</p>
+<h3>第21条（資格の取消し）</h3>
+<p>管理機関は、次の場合に資格を取り消し、その事実を本人に通知する。</p>
+<ol type="1">
+<li>虚偽または不正な方法で資格を取得した場合</li>
+<li>第15条の不正行為が確認された場合</li>
+<li>資格証を他人に貸与し、または偽造・変造した場合</li>
+</ol>
+<h3>第22条（個人情報の保護）</h3>
+<p>管理機関は、受験と資格管理に必要な最小限の個人情報のみを収集し、韓国「個人情報保護法」に従って、収集目的、保管期間、破棄方法をホームページの個人情報処理方針で公開する。</p>
+<h3>第23条（教育と検定の分離）</h3>
+<p>管理機関が運営する教育課程や対策テキストは受験の要件ではなく、管理機関は教育の修了や対策テキストの購入が合格に有利であると広告しない。第20条の継続教育は資格更新の要件であり、受験の要件ではない。</p>
+<h3>第24条（規程の改正）</h3>
+<p>この規程を改正するときは、施行の30日前までにホームページで公告し、韓国「資格基本法」により変更登録が必要な事項は変更登録の後に施行する。</p>
+<h2>附則</h2>
+<p>この規程は、韓国「資格基本法」に基づき民間資格として登録された日から施行する。</p>
+<h2>別表1 科目別の主な出題範囲</h2>
+<table>
+<thead><tr><th>科目</th><th>問題数</th><th>主な出題範囲</th></tr></thead>
+<tbody>
+<tr><td>1. データセンター概要・標準</td><td>10</td><td>データセンターの構成と種類、可用性と冗長化（N+1・2N）、Tier・TIA-942・EN 50600・ISO/IEC 22237の等級体系、PUEなどの効率指標、韓国の関連制度</td></tr>
+<tr><td>2. 電力</td><td>8</td><td>受変電設備、UPS、非常用発電機、ATS・STS、分電とラック電源、電力の基本計算、電力品質と接地</td></tr>
+<tr><td>3. 冷却</td><td>8</td><td>熱と単位、ASHRAEの温湿度基準、気流管理（ホットアイル・コールドアイル）、冷却設備、液冷、冷却運用の点検</td></tr>
+<tr><td>4. ITインフラ</td><td>10</td><td>ラック、構造化配線、ネットワーク構成と冗長化、サーバー、ストレージとバックアップ、機器の搬入・設置手順</td></tr>
+<tr><td>5. 消防・セキュリティ・安全</td><td>8</td><td>火災感知とガス系消火設備、入退室管理と物理セキュリティ、CCTV、搬出入と媒体の廃棄、電気作業の安全（LOTO）、事故事例</td></tr>
+<tr><td>6. 運用実務の基礎</td><td>16</td><td>交代勤務と引き継ぎ、SOP・MOP・EOP、変更管理、障害管理と報告、容量管理、資産・構成・協力会社管理、事業継続と災害復旧、記録と報告</td></tr>
+</tbody>
+</table>
+</article>
 <footer data-nosnippet>
   데이터센터운영관리사는 현재 민간자격 등록을 준비 중이며, 이 규정은 등록된 날부터 시행합니다. 등록번호는 등록 후 게시합니다.<br>
   상호 블루아이티 · 대표 임성민 · 사업자등록번호 625-15-02359 · 통신판매업 신고번호 제2026-수원영통-1408호 (<a href="https://www.ftc.go.kr/bizCommPop.do?wrkr_no=6251502359" target="_blank" rel="noopener">사업자정보 확인</a>) · admin@dcci.co.kr<br>
@@ -919,19 +1104,22 @@ recovery, records and reporting</td>
 </div>
 <script>
 (function(){
+  var N={ko:['데이터센터역량인증원<sup class="tm">™</sup>','Data Center Competency Institute (DCCI<sup class="tm">™</sup>)'],
+         en:['Data Center Competency Institute','DCCI<sup class="tm">™</sup> · 데이터센터역량인증원<sup class="tm">™</sup>'],
+         ja:['データセンター能力認証院','DCCI<sup class="tm">™</sup> · 데이터센터역량인증원<sup class="tm">™</sup>']};
+  var T={ko:'자격관리·운영 규정 | 데이터센터운영관리사 — 데이터센터역량인증원',en:'Management and Operation Rules | DC Operations Manager — DCCI',ja:'資格管理・運営規程 | データセンター運用管理士 — DCCI'};
   function set(l){
-    document.getElementById('ko').hidden = l!=='ko';
-    document.getElementById('en').hidden = l!=='en';
-    document.getElementById('dl-ko').hidden = l!=='ko';
-    document.getElementById('dl-en').hidden = l!=='en';
+    if(!N[l]) l='en';
+    ['ko','en','ja'].forEach(function(x){document.getElementById(x).hidden=x!==l;document.getElementById('dl-'+x).hidden=x!==l;});
     document.documentElement.lang = l;
-    document.title = l==='en' ? 'Management and Operation Rules | DC Operations Manager — DCCI' : '자격관리·운영 규정 | 데이터센터운영관리사 — 데이터센터역량인증원';
+    document.title = T[l];
+    document.getElementById('bn').innerHTML=N[l][0]; document.getElementById('bs').innerHTML=N[l][1];
     document.querySelectorAll('.lang button').forEach(function(b){b.setAttribute('aria-pressed', b.dataset.l===l ? 'true':'false');});
     try{localStorage.setItem('dcci-lang', l);}catch(e){}
   }
   document.querySelectorAll('.lang button').forEach(function(b){b.addEventListener('click', function(){set(b.dataset.l);});});
-  var l='ko'; try{ l = new URLSearchParams(location.search).get('lang') || localStorage.getItem('dcci-lang') || 'ko'; }catch(e){}
-  set(l==='en'?'en':'ko');
+  var l='en'; try{ l = new URLSearchParams(location.search).get('lang') || localStorage.getItem('dcci-lang') || 'en'; }catch(e){}
+  set(l);
 })();
 </script>
 </body>
