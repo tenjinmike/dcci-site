@@ -28,7 +28,7 @@
 </script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@400;500;700&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
 <style>
 :root{
   --bg:#EEF2F4; --surface:#FFFFFF; --ink:#14212B; --muted:#55636E; --line:#C5CED6;
@@ -56,6 +56,12 @@ a:focus-visible,button:focus-visible{outline:3px solid var(--cold);outline-offse
 .wrap{max-width:1080px;margin:0 auto;padding:0 24px}
 header.top{display:flex;justify-content:space-between;align-items:center;padding:22px 0;border-bottom:1px solid var(--line);gap:16px}
 .left{display:flex;align-items:center;gap:18px}
+html:lang(en) body{font-family:"IBM Plex Sans","IBM Plex Sans KR",system-ui,sans-serif;letter-spacing:-.003em}
+html:lang(ja) body{font-family:"IBM Plex Sans JP","IBM Plex Sans KR","Hiragino Sans","Yu Gothic UI",sans-serif;font-feature-settings:"palt"}
+html:lang(ja) h1,html:lang(ja) h2{letter-spacing:.01em}
+.brand>span{white-space:nowrap}
+html:lang(en) .brand>span,html:lang(ja) .brand>span{font-size:17px;letter-spacing:-.005em}
+@media (max-width:480px){html:lang(en) .brand>span{white-space:normal;font-size:16px;line-height:1.25;display:block}html:lang(ja) .brand>span{font-size:16px}.brand small{font-size:11px}}
 :lang(ja) body,html:lang(ja) body{word-break:normal;line-break:strict;overflow-wrap:anywhere}
 html:lang(ja) nav a{margin-left:16px;font-size:14px}
 html:lang(ja) nav a.nav-buy{padding:5px 10px}
@@ -306,7 +312,7 @@ footer b{color:var(--ink)}
 </div>
 <script>
 var EN={
-brand:"DCCI<sup class=\"tm\">™</sup> Data Center Competency Institute",brandSub:"데이터센터역량인증원<sup class=\"tm\">™</sup>",
+brand:"Data Center Competency Institute",brandSub:"DCCI<sup class=\"tm\">™</sup> · 데이터센터역량인증원<sup class=\"tm\">™</sup>",
 navAbout:"About",navExam:"Exam",navSub:"Subjects",navApply:"How to apply",navCbt:"CBT demo",navBuy:"Buy book",buyBarT:"<b class=\"bb-full\"><i>Data Center Operations Manager Level 2</i> </b>Study guide — Japanese Kindle edition on sale",buyBarA:"Buy on Amazon Japan →",ctaCbt:"Try the CBT practice exam",ctaCbt2:"Try the web CBT practice exam",navVerify:"Verify",
 h1:"A qualification for the people who keep data centers running",
 heroP:"Data Center Operations Manager Level 2 is a private qualification being prepared for registration in Korea. It will test the knowledge operators use every day: data center standards, power, cooling, IT infrastructure, fire, security and safety, and day-to-day operations. Once registered, the exam will run as a web CBT with instant results and certificates.",
@@ -344,7 +350,7 @@ verH:"Verify a certificate",verP:"Enter the certificate number shown on the cert
 foot:"<b>Data Center Competency Institute (DCCI™)</b> is a data center qualification brand operated by BLUE IT.<br>BLUE IT · CEO Sungmin Lim · Business registration no. 625-15-02359<br>12 Maeyeong-ro 310beon-gil, Yeongtong-gu, Suwon, Gyeonggi-do, Korea · Tel +82-70-8095-5710 · admin@dcci.co.kr<br>Mail-order business report no.: 2026-Suwon Yeongtong-1408 (<a href=\"https://www.ftc.go.kr/bizCommPop.do?wrkr_no=6251502359\" target=\"_blank\" rel=\"noopener\">Verify business info</a>)<br>This is a private qualification, not a national qualification of Korea.<div class=\"legal\">Type: private qualification (registration in preparation) · Registration no.: to be posted · Operator: BLUE IT (CEO Sungmin Lim)<br>Privacy: names and email addresses received by email are used only to reply and send launch updates, are not shared, and are deleted once no longer needed.<br>Trademarks: DCCI™ and 데이터센터역량인증원™ are trademarks filed in Korea by Sungmin Lim on 24 Nov 2026 and are pending examination (DCCI application no. 40-2026-0255463, classes 9, 16, 41). Unauthorized use is prohibited.<br>&copy; 2026 BLUE IT. All rights to the content of this page belong to BLUE IT (Sungmin Lim).</div>"
 };
 var JA={
-brand:"DCCI<sup class=\"tm\">™</sup> <span style=\"white-space:nowrap\">データセンター</span><span style=\"white-space:nowrap\">能力認証院</span>",brandSub:"데이터센터역량인증원<sup class=\"tm\">™</sup>",
+brand:"データセンター能力認証院",brandSub:"DCCI<sup class=\"tm\">™</sup> · 데이터센터역량인증원<sup class=\"tm\">™</sup>",
 navAbout:"資格について",navExam:"試験案内",navSub:"出題科目",navApply:"受験方法",navCbt:"CBT体験",navBuy:"対策テキスト購入",buyBarT:"<b class=\"bb-full\">『データセンター運用管理士 2級 対策テキスト』</b>Kindle版 好評発売中",buyBarA:"Amazonで購入する →",ctaCbt:"CBT模擬試験を体験",ctaCbt2:"Web CBT模擬試験を体験する",navVerify:"真偽確認",
 h1:"データセンターを止めない人のための資格",
 heroP:"データセンター運用管理士 2級は、韓国で民間資格として登録準備中の資格です。データセンターの概要・標準、電力、冷却、ITインフラ、消防・セキュリティ・安全、運用実務の基礎まで、現場の運用担当者が毎日使う知識を評価します。登録後はWeb CBTで実施し、結果と合格証をすぐにお届けする予定です。",
